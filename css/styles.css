@@ -1,0 +1,442 @@
+:root{
+    --primary: #00c6ff;
+    --secondary: #DBDBDB;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #474747;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+}
+
+/* EVENT FORM */
+#event-description{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#disclaimer h2,
+#disclaimer .event-date{
+    color: var(--primary);
+}
+
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+#subscription-form{
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 17%;
+    border-radius: 10px;
+}
+
+#subscription-form p{
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.form-group label{
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+/*BENEFITS-SECTIONS*/
+
+#key-benefits h2{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.benefit .benefit-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.benefit #benefit-1{
+    background-image: url("/img/sqr-1.jpg");
+}
+
+.benefit #benefit-2{
+    background-image: url("/img/sqr-2.jpg");
+}
+
+.benefit #benefit-3{
+    background-image: url("/img/sqr-3.jpg");
+}
+
+/*LOCATION*/
+
+#location{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#address{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+    gap: 15px;
+    max-width: 30%;
+}
+
+#address i{
+    font-size: 4em;
+    color: var(--primary);
+}
+
+#address p{
+    font-weight: 400;
+    font-size: 1.5em;
+    color: var(--text-color);
+    max-width: 180px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#description-location{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#description-location h2{
+    margin-bottom: 1em;
+    font-size: 3em;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+#description-location p{
+    color: var(--text-color);
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/*DETAILS*/
+
+#details{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img{
+    width: 50%;
+}
+
+#detail-1 h3{
+    font-size: 4em;
+    color: var(--text-tertiary);
+}
+
+.detail h3{
+    font-size: 2.5em;
+    color: var(--text-tertiary);
+    margin-bottom: 20px;
+}
+
+.detail-description{
+    width: 100%;
+    padding-left: 5%;
+}
+
+.detail-description ul{
+    font-size: 1.5em;
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+
+.detail-description ul li:last-child{
+    font-weight: bold;
+}
+
+/*CALL TO ACTION SECTION*/
+
+#cta{
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#cta h3{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/*FOOTER*/
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    padding: 50px;
+}
+
+#social-media{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+#social-media a{
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-tertiary);
+    line-height: 1.5em;
+}
+
+#social-media a:hover{
+    transition: .3s;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+#info-dev h4{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+
+}
+
+/*MOBILE*/
+
+@media (max-width: 450px) {
+
+    .btn{
+        opacity: 1;
+    }
+
+    /*EVENT FORM*/
+    #event-description{
+        flex-direction: column;
+        height: auto;
+    }
+    #disclaimer{
+        padding: 2em;
+    }
+
+    #subscription-form{
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /*BENEFITS-SECTIONS*/
+    .benefits{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*LOCATION*/
+    #location{
+        order: 1;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 0; 
+    }
+
+    #address{
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i{
+        margin: .3em 0;
+    }
+
+    #description-location{
+        order: 1;
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+
+    #description-location p{
+        display: none;
+    }
+
+    /*DETAILS*/
+    .detail{
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .detail img{
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img{
+        display: none;
+    }
+
+    #detail-1 h3{
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
+    }
+
+    #detail-2 h3{
+        font-size: 2em;
+    }
+
+    #detail-3 h3{
+        font-size: 2em;
+    }
+
+    .detail ul li{
+        font-size: 1em;
+    }
+    
+    .detail ul{
+        margin: 1em 0;
+    }
+
+    #detail-3 img{
+        order: 2;
+    }
+
+    /*CALL TO ACTION SECTION*/
+
+    #cta h3{
+        max-width: 100%;
+        font-size: 1.5em;
+    }
+
+    #cta .btn{
+        width: 80%;
+    }
+
+    /*FOOTER*/
+
+    #footer{
+        flex-direction: column;
+        text-align: center;
+        margin: 3em 0;
+        gap: 2em;
+    }
+
+    #info-dev h4{
+        font-size: 1em;
+    }
+
+}
